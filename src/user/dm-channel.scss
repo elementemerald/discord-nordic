@@ -26,8 +26,12 @@
   * call icons
   */
 .icon-JRJzJz[style*='background-image: url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg")'] {
-  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/user/dm-channel/call-incoming.svg")) !important;
+  background-image: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/user/dm-channel/call-incoming.svg"
+  )) !important;
 }
 .icon-JRJzJz[style*='background-image: url("/assets/5e64269a40d5bb745c2f3df29f26738d.svg")'] {
-  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/user/dm-channel/call-missed.svg")) !important;
+  background-image: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/user/dm-channel/call-missed.svg"
+  )) !important;
 }

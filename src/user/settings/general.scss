@@ -3,7 +3,9 @@
  */
 .lockIcon-3t6Ow0[src='/assets/55b367aaef0b83c837ac6c3bfe01da4c.svg'],
  .secured-2wavXv:before /*! sidebar left > click on 'voice connected' */ {
-  content: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/lock.svg"));
+  content: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/lock.svg"
+  ));
 }
 
 /*
@@ -23,7 +25,9 @@
   * > profiles
   */
 .theme-dark .imageUploaderIcon-2OHmFu {
-  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/upload.svg"));
+  background-image: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/upload.svg"
+  ));
 }
 
 .premiumFeatureBorder-3vL7bn {
@@ -54,5 +58,7 @@
   * > authorizes apps
   */
 .permissionCheckmark-ji-OoY {
-  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/checkmark.svg"));
+  background-image: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/checkmark.svg"
+  ));
 }
