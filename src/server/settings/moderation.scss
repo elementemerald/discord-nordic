@@ -1,0 +1,36 @@
+/*
+ * > rules screening
+ */
+.applicationIcon-SVAEk2[src="/assets/bd935213414be433dbfce91f7506bf54.svg"] {
+  content: url(svg("server/settings/moderation/rules.svg"));
+}
+.applicationIcon-SVAEk2[src="/assets/c90de2083432d65530258ceac785f427.svg"] {
+  content: url(svg("server/settings/moderation/rules-light.svg"));
+}
+
+/*
+   * > rules screening > get started
+   */
+.addItemContainer-KX1VaV path[fill="#{$focus-primary-500}"] {
+  fill: var(--link-500);
+}
+
+/*
+   * AutoMod
+   */
+.automodText-azqvwf {
+  color: var(--black-500);
+}
+
+/*
+   * > audit log
+   */
+.typeCreate--o_pRH:after {
+  background: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/moderation/type-create.svg"));
+}
+.typeUpdate-34INPr:after {
+  background: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/moderation/type-update.svg"));
+}
+.typeDelete-1AYMTg:after {
+  background: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/moderation/type-delete.svg"));
+}

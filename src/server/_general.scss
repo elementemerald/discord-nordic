@@ -1,0 +1,45 @@
+/** discord partner badge */
+.icon-3BYlXK {
+  color: var(--black-500);
+}
+
+/** boosted server badge */
+.iconBackgroundTierNone-3M21Zn,
+.iconBackgroundTierOne-1S68CI,
+.iconBackgroundTierThree-2hfNBO,
+.iconBackgroundTierTwo-2XoNXD {
+  color: var(--primary-dark-500) !important;
+}
+
+/*
+   * Popup "Stop @everyone spam"
+   */
+.ping-2J18Tq {
+  content: url(svg("server/ping.svg"));
+}
+
+.checklistIcon-S-7rG0 circle[fill="var(--white-100)"] {
+  fill: var(--black-500);
+}
+
+/*
+   * > goal
+   */
+.perkIcon-2DG0tJ path[fill="#{$premium-perk-pink}"] {
+  fill: var(--guild-boosting-pink);
+}
+.perkIcon-2DG0tJ path[fill="#{$premium-perk-yellow}"] {
+  fill: var(--premium-perk-yellow);
+}
+
+/*
+   * > dropdown menu
+   */
+.colorDefault-CDqZdO .check-3HZJs4, /** checkbox */
+  /** hover state */
+  .colorDefault-CDqZdO.focused-3qFvc8:not(.colorDanger-3n-KnP),
+  .colorDefault-CDqZdO.focused-3qFvc8 .checkbox-hADx5o,
+  .colorDefault-CDqZdO.focused-3qFvc8 .radioSelection-1UHp0b,
+  .colorDefault-CDqZdO.focused-3qFvc8 .subtext-2GlkbE {
+  color: var(--black-500);
+}

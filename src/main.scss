@@ -1,3 +1,12 @@
+@import "discord-color.scss";
+@import "colors/imports";
+
+@import "sidebar-left.scss";
+@import "hljs.scss";
+
+@import "user/imports";
+@import "server/imports";
+
 ::selection {
   background-color: rgba(var(--link-500-rgb), 0.25);
 }
@@ -98,13 +107,13 @@
 }
 
 .document-1u6V3N {
-  background-image: url(svg("global/upload-document.svg"));
+  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/global/upload-document.svg"));
 }
 .code-rRQnfi {
-  background-image: url(svg("global/upload-code.svg"));
+  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/global/upload-code.svg"));
 }
 .image-2ssF8k {
-  background-image: url(svg("global/upload-image.svg"));
+  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/global/upload-image.svg"));
 }
 
 /*

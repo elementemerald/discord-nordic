@@ -1,0 +1,63 @@
+/*
+ * open chat (not joined)
+ * hover (joined)
+ ! + stage bottom
+ */
+.gradientContainer-phMG8d {
+  --color-rgb: var(--primary-dark-700-rgb);
+  background-image: linear-gradient(
+    rgb(var(--color-rgb)),
+    rgba(var(--color-rgb), 0.738) 19%,
+    rgba(var(--color-rgb), 0.541) 34%,
+    rgba(var(--color-rgb), 0.382) 47%,
+    rgba(var(--color-rgb), 0.278) 56.5%,
+    rgba(var(--color-rgb), 0.194) 65%,
+    rgba(var(--color-rgb), 0.126) 73%,
+    rgba(var(--color-rgb), 0.075) 80.2%,
+    rgba(var(--color-rgb), 0.042) 86.1%,
+    rgba(var(--color-rgb), 0.021) 91%,
+    rgba(var(--color-rgb), 0.008) 95.2%,
+    rgba(var(--color-rgb), 0.002) 98.2%,
+    transparent
+  );
+}
+
+/*
+   * > invite (when empty)
+  */
+.art-3XrHCd[style*='background-image: url("/assets/ec499e7dcc451566caeda997fa9265db.svg")'] {
+  background-image: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/channel/voice/invite.svg")) !important;
+}
+
+/*
+   * > screen share (step 2)
+   */
+.selectorTextSelected-2zup8I {
+  color: var(--black-500);
+}
+
+.gradientBackground-MytxDL {
+  background: linear-gradient(
+    90deg,
+    var(--premium-tier-2-purple-for-gradients),
+    var(--premium-tier-2-pink-for-gradients)
+  );
+  color: var(--black-500);
+}
+.iconColor-3MUqJ2,
+.textLink-VbUIXl,
+.upsellText-29l7Q- {
+  color: currentColor;
+}
+
+/*
+   * > react with emoji > enable fun reaction with nitro
+   */
+.tooltipBrand-20XsMA,
+.tooltipText-1UXpqk {
+  color: var(--black-500) !important;
+}
+
+.emojiPickerHeader-2mWh2T img[src="/assets/99088efd1b1b695e2b026ae6923924d2.svg"] {
+  content: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/channel/voice/emoji-party.svg"));
+}
