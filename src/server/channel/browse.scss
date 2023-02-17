@@ -1,0 +1,21 @@
+.header-3xB4vB,
+.container-1um7CU,
+.container-2IKOsH {
+  background-color: var(--background-primary) !important;
+}
+.innerHeader-1cC3Fp:after {
+  background: linear-gradient(
+      180deg,
+      rgba(var(--background-primary-rgb), 0) 0,
+      var(--background-primary)
+    )
+    linear-gradient(180deg, rgba(var(--background-primary-rgb), 0) 0, var(--background-primary)) !important;
+}
+
+.channelRow-4X_3fi {
+  background-color: var(--background-secondary);
+
+  &:hover:not(.disabled-3cfocy) {
+    background-color: var(--background-modifier-hover);
+  }
+}

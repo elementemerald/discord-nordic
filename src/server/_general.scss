@@ -8,12 +8,13 @@
 .iconBackgroundTierOne-1S68CI,
 .iconBackgroundTierThree-2hfNBO,
 .iconBackgroundTierTwo-2XoNXD {
-  color: var(--primary-dark-500) !important;
+  color: var(--primary-500) !important;
 }
 
 /*
-   * Popup "Stop @everyone spam"
-   */
+ * Popup "Stop @everyone spam"
+ ? TODO: check utility
+ */
 .ping-2J18Tq {
   content: url(svg("server/ping.svg"));
 }
@@ -23,23 +24,27 @@
 }
 
 /*
-   * > goal
-   */
-.perkIcon-2DG0tJ path[fill="#{$premium-perk-pink}"] {
-  fill: var(--guild-boosting-pink);
-}
-.perkIcon-2DG0tJ path[fill="#{$premium-perk-yellow}"] {
-  fill: var(--premium-perk-yellow);
+ * Modified settings
+ *   Server settings
+ *   Channel settings
+ */
+.container-20TyK0[style*="background-color: rgb(#{$primary-800-rgb})"] {
+  background-color: var(--background-floating) !important;
 }
 
 /*
-   * > dropdown menu
-   */
-.colorDefault-CDqZdO .check-3HZJs4, /** checkbox */
-  /** hover state */
-  .colorDefault-CDqZdO.focused-3qFvc8:not(.colorDanger-3n-KnP),
-  .colorDefault-CDqZdO.focused-3qFvc8 .checkbox-hADx5o,
-  .colorDefault-CDqZdO.focused-3qFvc8 .radioSelection-1UHp0b,
-  .colorDefault-CDqZdO.focused-3qFvc8 .subtext-2GlkbE {
+ * Preview server (from discover) - hover buttons
+ * Server settings > Onboarding > Check it out (step 3 > preview) - hover buttons
+ */
+.button-3_1yil:hover,
+.button-29sJG8:hover {
+  background-color: var(--brand-experiment-500);
   color: var(--black-500);
+}
+
+/*
+ * Popup "Invite People"
+ */
+.theme-dark .inviteBannerUpsell-1t_LYM {
+  background-color: var(--c-background-secondary-alt2);
 }

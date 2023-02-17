@@ -1,17 +1,30 @@
-/*
- * > server template
- */
-.descriptionIcon-3nDZrK circle[fill="var(--white-500)"] {
-  fill: var(--black-500);
+.theme-dark .avatarUploaderInnerEmpty-1WzULT, /* > Overview (server without avatar) */
+.tierBody-1d3UiS /* > Sticker */ {
+  background-color: var(--background-secondary) !important;
 }
 
 /*
-   * Stickers
-   */
+ * > Overview
+ */
+.theme-light .avatarUploaderInnerEmpty-1WzULT .imageUploaderAcronym-2JJw9B {
+  color: var(--black-500);
+}
+
+/*
+ * > Stickers
+ */
 .upsellHeader-3707cG,
 .upsellDescription-2O_p3B {
   color: var(--white-100);
 }
 .currentTierIcon-23IR3F {
   color: var(--black-500) !important;
+}
+
+.theme-dark .tierHeaderLocked-30MLlO,
+.theme-dark .tierHeaderUnlocked-1OpOLf {
+  background-color: var(--c-background-secondary-alt2);
+}
+.theme-dark .tierIconLocked-RGSkSl {
+  color: var(--text-muted);
 }

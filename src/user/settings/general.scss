@@ -30,7 +30,7 @@
   ));
 }
 
-.premiumFeatureBorder-3vL7bn {
+.premiumFeatureBorder-1i95si {
   background: linear-gradient(var(--background-primary), var(--background-primary)) padding-box,
     linear-gradient(
         45deg,
@@ -41,17 +41,17 @@
 }
 
 /*
-  * >> change banner/avatar > choose gif
-  */
-.icon-1YUWIM path {
-  fill: var(--premium-perk-pink);
-}
-
-/*
   * >> server profiles > choose a server
   */
 .selectedIcon-19TbzU circle[fill="white"] {
   fill: var(--black-500);
+}
+
+/*
+  * > Privacy & Safety
+  */
+.itemFilled-2Fo7lr[aria-checked="true"] {
+  background-color: var(--c-background-secondary-alt2);
 }
 
 /*
@@ -61,4 +61,8 @@
   background-image: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/checkmark.svg"
   ));
+}
+
+.cardPrimaryOutline-1ofwVz {
+  border-color: var(--c-separator-border);
 }

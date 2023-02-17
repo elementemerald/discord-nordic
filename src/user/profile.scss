@@ -33,7 +33,7 @@
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/profile/badge-early-verified-bot.svg"
   ));
 }
-.profileBadge-2YySEb[src="/assets/c981e58b5ea4b7fedd3a643cf0c60564.svg"] {
+.profileBadge-2YySEb[src="/assets/b945002f0e0fd7f11990d800e98b5504.svg"] {
   content: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/profile/badge-certified-moderator.svg"
   ));
@@ -44,9 +44,13 @@
   ));
 }
 
+.botTagRegular-kpctgU:not(.botTagOP-3pUTXu), /** Bot tag */ {
+  color: var(--black-500);
+}
+
 /*
-   * Popup > supports commands badge
-   */
+ * Popup > supports commands badge
+ */
 .profileBadge22-3OAigE[src="/assets/498591d63b352256a1bf18061eff9d57.svg"] {
   content: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/profile/badge-commands.svg"
@@ -54,46 +58,37 @@
 }
 
 /*
-   * Popup > status > switch account
-   */
-.activeIcon-1ykRnF path[fill="#{$brand-500}"] {
-  fill: var(--brand-new-500);
-}
-.activeIcon-1ykRnF circle[fill="#{$white-500}"] {
-  fill: var(--black-500);
-}
-
-/*
-   * > status
-   ! Friends list
-   ! DM list
-   ! server > member list
-   */
-.mask-1FEkla rect[fill="#{$status-green-600-hex}"] {
+ * > status
+ ! Friends list
+ ! DM list
+ ! server > member list
+ */
+.mask-1FEkla rect[fill="#{$green-360-hex}"] {
   fill: var(--user-status-online);
 }
-.mask-1FEkla rect[fill="#{$status-yellow-500-hex}"] {
+.mask-1FEkla rect[fill="#{$yellow-300-hex}"] {
   fill: var(--user-status-idle);
 }
-.mask-1FEkla rect[fill="#{$status-red-500-hex}"] {
+.mask-1FEkla rect[fill="#{$red-400-hex}"] {
   fill: var(--user-status-dnd);
 }
-.mask-1FEkla rect[fill="#{$status-grey-500-hex}"] {
+.mask-1FEkla rect[fill="#{$primary-400-hex}"] {
   fill: var(--user-status-invisible);
 }
 
 /*
-   ! Friends list
-   ! DM list
-   ! server > member list
-   */
+ ! Friends list
+ ! DM list
+ ! server > member list
+ */
 .mask-1FEkla rect[fill="#{$twitch-hex}"] {
   fill: var(--user-status-twitch);
 }
 
 /*
-   * Profile popup > profile too bright
-   */
+ * Profile popup > profile too bright
+ ? TODO: check this utility
+ */
 .upsellTooltipWrapper-1wqikQ {
   .header-HL0rH-,
   .content-3aT_vH {

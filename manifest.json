@@ -1,18 +1,18 @@
 {
   "id": "dev.ryand.DiscordNordic",
   "name": "Discord Nordic",
-  "description": "Nordic theme for Discord",
+  "description": "Nordic theme for Replugged",
   "author": {
     "name": "ryand",
     "discordID": "660292639412846621",
     "github": "elementemerald"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "updater": {
     "type": "github",
     "id": "elementemerald/discord-nordic"
   },
   "license": "CC BY-NC-SA 4.0",
   "type": "replugged-theme",
-  "main": "src/main.scss"
+  "main": "src/global.scss"
 }

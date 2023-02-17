@@ -9,8 +9,8 @@
 }
 
 /*
-   * > nitro (snowsgiving offer)
-   */
+ * > nitro (snowsgiving offer)
+ */
 .hero-2rQ_qr {
   background: linear-gradient(
     100.54deg,
@@ -28,10 +28,21 @@
 }
 
 /*
-   * > nitro
-   */
+ * > nitro
+ */
+.settingsTextContainer-3grHhq .defaultColor-1GKx81[style*="color: white"],
+.settingsTextContainer-3grHhq .description-2_tPhd[style*="color: white"] {
+  color: var(--header-primary) !important;
+}
+
+.lookInverted-2GrLaB.colorBrand-2M3O3N,
+.upsellButton-36YQ7c /*! server settings > stickers */ {
+  color: var(--brand-800);
+}
+
+// Tier blocks
 .pricePerInterval-1HgDkM[style*="color: white"],
-.text-md-normal-304U3g[style*="color: white"] {
+.text-md-normal-2rFCH3[style*="color: white"] {
   color: currentColor !important;
 }
 .tier0-17mYUd {
@@ -39,25 +50,21 @@
 }
 .tier2-qNjKTW {
   background: var(--premium-tier-2-pink);
-  color: var(--primary-dark-660);
+  color: var(--primary-660);
 }
 
-.lookInverted-2mDUMi.colorBrand-I6CyqQ,
-  .upsellButton-36YQ7c /*! server settings > stickers */ {
-  color: var(--brand-new-800);
-}
-
-.tag-3Upstw {
+/*
+ * >> favorite perks section
+ */
+.tag-3Upstw /* (new tag) */ {
   color: var(--black-500);
 }
 
+/*
+ * >> pick plan section
+ */
 .mostPopularText-1WuXKM {
-  color: var(--primary-dark-660);
-}
-
-.buttonBrand-2zsm1a {
-  color: var(--brand-new-800) !important;
-  border-color: var(--brand-new-800) !important;
+  color: var(--primary-660);
 }
 
 .sparkleStar1-2v0V0s {
@@ -74,24 +81,44 @@
 }
 
 /*
-   * > nitro > subscribe
-   ! Get nitro
-   */
+ * > nitro > subscribe
+ ! Get nitro
+ */
+.planOptionDiscount-2nex9n[style*="color: white"] {
+  color: var(--black-500) !important;
+}
+
 .warnIcon-3ly1wg {
   background-image: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/payment/warn.svg"
   ));
 }
-.planOptionDiscount-2nex9n {
-  color: var(--black-500);
-}
 
 /*
-   * > server boost
-   */
+ * > server boost
+ */
 .audioQualityIcon-2V2mE1 {
   color: var(--nord-blue);
 }
 .uploadSizeIcon-3OSRBC {
   color: var(--premium-tier-2-pink);
+}
+
+.card-2xlCYc {
+  background-color: var(--background-secondary);
+
+  &:hover {
+    background-color: var(--background-secondary-alt);
+  }
+}
+.gemWithoutLabel-1od40y {
+  color: var(--text-muted) !important;
+}
+
+/*
+ * > billing
+ */
+.theme-dark .codeRedemptionRedirect-2hYMSQ /* user settings > billing */ {
+  border-color: var(--c-separator-border);
+  background-color: hsl(var(--black-500-hsl) / 0.8);
 }

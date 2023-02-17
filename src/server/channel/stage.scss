@@ -1,8 +1,17 @@
+.colorable-3rVGna.primaryDark-2UJt1G /* (music button) */ {
+  background-color: var(--background-secondary);
+}
+.container-1IyjjY:hover, /* (cards) */
+.colorable-3rVGna.primaryDark-2UJt1G.active-3D763s, /** (music button) */
+.colorable-3rVGna.primaryDark-2UJt1G:hover {
+  background-color: var(--background-modifier-hover);
+}
+
 /*
  * (Waiting for the stage start)
  */
-.icon-3CZSYe[style*="background-color: var(--status-green-600)"],
-.icon-3CZSYe[style*="background-color: var(--brand-new-500)"] {
+.icon-3CZSYe[style*="background-color: var(--green-360)"],
+.icon-3CZSYe[style*="background-color: var(--brand-500)"] {
   color: var(--black-500);
 }
 
@@ -18,8 +27,8 @@
 }
 
 /*
-  * > stage > moderator badge
-  */
+ * > stage > moderator badge
+ */
 .container-yn4cwV rect[fill="var(--white-500)"] + path {
   fill: var(--black-500);
 }

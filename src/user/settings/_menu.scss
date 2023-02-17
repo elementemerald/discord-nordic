@@ -1,11 +1,14 @@
-/** Beta tag */
-.baseShapeRound-3epLEv[style*="background-color: var(--brand-500)"] {
+/*
+ * Beta tag
+ ! Server settings > AutoMod > automod tag
+ */
+.base-3IDx3L[style*="background-color: var(--brand-500)"] {
   color: var(--black-500);
 }
 
 /*
-   * Nitro badge
-   */
+ * Nitro badge
+ */
 .premiumLabel-3HPvdB.selected-2Uns2B {
   path[fill="url(#paint0_linear_6413_12612)"],
   path[fill="url(#paint1_linear_6413_12612)"] {
@@ -14,9 +17,9 @@
 }
 
 /*
-   * Nitro badge (with offer)
-   ! DM > Nitro btn (with offer)
-   */
+ * Nitro badge (with offer)
+ ! DM > Nitro btn (with offer)
+ */
 .offerBadge-1KDtMz {
   color: var(--black-500) !important;
 }

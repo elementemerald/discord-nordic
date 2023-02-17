@@ -1,3 +1,7 @@
+.container-ZSFRqx /* Onboarding > Check it out (step 2 > add answer) */ {
+  border-color: var(--c-reaction-border);
+}
+
 /*
  * > enable community
  */
@@ -8,14 +12,14 @@
 }
 
 /*
-   * > enable community > get started
-   */
+ * > enable community > get started
+ */
 .overviewSidebar-3JDLaJ {
   background: linear-gradient(
     180deg,
-    var(--brand-new-500) 6.65%,
-    var(--brand-new-600) 69.44%,
-    var(--brand-new-800) 106.24%
+    var(--brand-500) 6.65%,
+    var(--brand-600) 69.44%,
+    var(--brand-800) 106.24%
   );
 }
 
@@ -27,7 +31,7 @@
 }
 
 .selected-2HDz3F .stepIndex-Kqaht- {
-  color: var(--brand-new-900);
+  color: var(--brand-900);
 }
 
 .content--gAC_W img[src="/assets/070f1b98adc8ce07c7823021133efed5.svg"] {
@@ -37,27 +41,20 @@
 }
 .content--gAC_W img[src='/assets/d8a03b9985d824edc78c6eb4785dc949.svg'] /** (step 2) */ {
   content: url(svg(
-    "https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/community/wrench.svg"
+    "https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/community/"
   ));
 }
 .content--gAC_W img[src='/assets/b6193b9564ca0ecbbd1ed6b80f47646d.svg'] /** (step 3) */ {
   content: url(svg(
-    "https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/community/check.svg"
+    "https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/community/"
   ));
 }
 
 /*
-   * > discovery
-   */
+ * > discovery
+ */
 .sparkles-1JOsCC[src="/assets/89c185367e2d2dd521f4265f2b8c93ee.svg"] {
   content: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/server/settings/community/discovery-stars.svg"
   ));
-}
-
-/*
-   * > welcome screen
-   */
-.activeCircle-3rE6-u {
-  color: var(--black-500);
 }

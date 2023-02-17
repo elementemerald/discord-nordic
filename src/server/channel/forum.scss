@@ -1,32 +1,50 @@
-.container-3wLKDe {
-  background-color: var(--background-secondary-alt) !important;
+.newChannel-3q3LPr, /*! Server > new channel */
+.newPostCount-3SXe5K,
+.botTagOP-3pUTXu,
+.newBadge-1LcB6t[style*='background-color: var(--brand-260)'],
+.titleBadge-13kJKi[style*='background-color: var(--brand-260)'] {
+  color: var(--brand-900);
 }
 
 /*
-   * new badge
-   */
-.newBadge-1LcB6t[style*="background-color: var(--brand-260)"] {
-  color: var(--brand-new-800);
+ * Get started
+ */
+.base-3IDx3L[style*="background-color: var(--status-positive-background)"],
+.discordIcon-2-SnKe {
+  color: var(--black-500);
+}
+
+.inline-1Al0JA img[src="/assets/513f881c80a414c9f58190184516189b.svg"] {
+  content: url(svg(
+    "https://themes.ryand.ca/client/replugged-nordic/assets/server/channel/forum/guide.svg"
+  ));
 }
 
 /*
-   * > filter
-   */
+ * > filter
+ */
 .countText-1d5thl,
-  .countText-35ewVE /** Dropdown menu */ {
+.countText-35ewVE /** Dropdown menu */ {
   color: var(--black-500);
 }
 
 /*
-   * Post
-   */
+ * Post
+ */
 .pinIcon-3I5-gm path[fill="white"] {
   fill: var(--black-500);
 }
 
-/*
-   * > Post
-   */
-.botTagOP-3pUTXu {
-  color: var(--brand-new-900);
+.mainCard-3KBsBI,
+.contentPreview-3fWiuC /* (gallery view) */ {
+  background-color: var(--background-secondary) /* !important */;
+}
+
+.container-2qVG6q:hover /* (list view) */ {
+  background-color: var(--background-modifier-hover);
+}
+
+.reaction-102jx9 {
+  background-color: var(--background-secondary-alt);
+  border-color: var(--c-reaction-border);
 }
