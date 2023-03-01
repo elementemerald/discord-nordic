@@ -7,7 +7,7 @@ specifiers:
   '@types/node': ^18.11.15
   parcel: ^2.8.2
   prettier: ^2.8.1
-  replugged: 4.0.0-rc.1
+  replugged: 4.0.0-rc.2
   tsx: ^3.12.1
 
 devDependencies:
@@ -17,7 +17,7 @@ devDependencies:
   '@types/node': 18.11.15
   parcel: 2.8.2
   prettier: 2.8.1
-  replugged: 4.0.0-rc.1
+  replugged: 4.0.0-rc.2
   tsx: 3.12.1
 
 packages:
@@ -3135,8 +3135,8 @@ packages:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: true
 
-  /replugged/4.0.0-rc.1:
-    resolution: {integrity: sha512-vjSx5Rzn/1ocdKqXzvrw0VRUBtNVRKWkzAwkpiDo/LNXoEGiCj/l25XN4mXGO9rZaU+dK+EUl3k7pisuwcPgxQ==}
+  /replugged/4.0.0-rc.2:
+    resolution: {integrity: sha512-eRvx9vYKuAHJYW8s8hvT8Fphja3ajgtJfky9gEzFyq910zmlwt+qABh6J0pgJulekdCuFf7UdrMNbVQD0aOh2A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
