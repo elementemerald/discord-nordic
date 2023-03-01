@@ -50,8 +50,10 @@
 /*
   * > Privacy & Safety
   */
-.itemFilled-2Fo7lr[aria-checked="true"] {
-  background-color: var(--c-background-secondary-alt2);
+@if is_uniform() {
+  .itemFilled-2Fo7lr[aria-checked="true"] {
+    background-color: var(--background-secondary-alt);
+  }
 }
 
 /*
@@ -61,8 +63,4 @@
   background-image: url(svg(
     "https://themes.ryand.ca/client/replugged-nordic/assets/user/settings/general/checkmark.svg"
   ));
-}
-
-.cardPrimaryOutline-1ofwVz {
-  border-color: var(--c-separator-border);
 }

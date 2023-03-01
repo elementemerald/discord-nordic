@@ -1,15 +1,18 @@
 .default-colors,
 :root {
   /** Discord colors */
-  --primary-160-hsl: #{hexToHSL(#fcfcfd)};
+  --primary-130-hsl: #{hexToHSL(#fcfcfd)};
+  --primary-160-hsl: var(--primary-130-hsl);
   --primary-200-hsl: var(--nord-light1-hsl); /*! nord color */
+  --primary-230-hsl: var(--primary-200-hsl);
   --primary-260-hsl: #{hexToHSL(#d2d6e0)};
   --primary-300-hsl: #{hexToHSL(#b6bcc9)};
   --primary-330-hsl: #{hexToHSL(#97a1b4)};
   --primary-360-hsl: var(--primary-330-hsl);
   --primary-400-hsl: #{hexToHSL(#7a879f)};
   --primary-430-hsl: #{hexToHSL(#606d85)};
-  --primary-500-hsl: var(--nord-dark4-hsl); /*! nord color */
+  --primary-460-hsl: var(--nord-dark4-hsl); /*! nord color */
+  --primary-500-hsl: var(--nord-dark3-hsl); /*! nord color */
   --primary-530-hsl: var(--primary-500-hsl);
   --primary-560-hsl: #{hexToHSL(#424a5c)};
   --primary-600-hsl: var(--nord-dark2-hsl); /*! nord color */
@@ -18,8 +21,10 @@
   --primary-700-hsl: #{hexToHSL(#20242c)};
   --primary-800-hsl: #{hexToHSL(#15181e)};
 
+  --green-230-hsl: var(--green-500-hsl);
   --green-330-hsl: var(--green-500-hsl);
   --green-360-hsl: var(--green-500-hsl);
+  --green-400-hsl: var(--green-500-hsl);
   --green-430-hsl: var(--green-500-hsl);
   --green-500-hsl: var(--nord-green-hsl); /*! nord color */
   --green-560-hsl: var(--green-500-hsl);
@@ -29,6 +34,7 @@
   --green-760-hsl: #{hexToHSL(#82996f)};
 
   --red-360-hsl: var(--red-500-hsl);
+  --red-345-hsl: var(--red-500-hsl);
   --red-400-hsl: var(--red-500-hsl);
   --red-430-hsl: var(--red-500-hsl);
   --red-500-hsl: var(--nord-red-hsl); /*! nord color */
@@ -105,10 +111,7 @@
   --application-subscription-start-hsl: var(--nord-blue-hsl); /*! nord color */
   --application-subscription-end-hsl: var(--nord-cyan-hsl); /*! nord color */
 
-  /* overwrite some variables */
-  --elevation-low: 0 1px 0 var(--c-separator-border);
-  --search-popout-date-picker-hint-text: var(--text-muted);
-
+  /* Override variables */
   --button-danger-background-hover: var(--red-560);
   --button-danger-background-active: var(--red-630);
   --button-outline-danger-background-active: var(--red-560);
@@ -117,6 +120,11 @@
   --button-positive-background-active: var(--green-760);
 
   --home-background: var(--background-primary);
+
+  @if is_uniform() {
+    --elevation-low: 0 1px 0 var(--background-secondary-alt);
+    --search-popout-date-picker-hint-text: var(--text-muted);
+  }
 }
 
 .theme-light,
@@ -125,51 +133,58 @@
   --search-popout-date-picker-hint-value-text: var(--black-500);
 }
 
-/** Uniformize colors */
 .theme-dark {
-  /* custom variables */
-  --c-separator-border: var(--primary-560);
-  --c-background-secondary-alt2: var(--primary-500);
-  --c-reaction-border: var(--primary-660);
-
-  /* override variables */
-  --background-primary: var(--primary-630);
-  --background-secondary: var(--primary-600);
-  --background-secondary-alt: var(--primary-560);
-
+  /* Overrides variables */
+  --header-secondary: var(--primary-300);
+  --text-muted: var(--primary-300);
   --interactive-muted: var(--primary-430);
-  --channels-default: var(--primary-330);
-  --channel-icon: var(--primary-400);
-  --background-message-hover: hsl(var(--primary-560-hsl) / 0.25);
-  --channeltextarea-background: var(--background-secondary);
-  --background-mentioned: hsl(var(--brand-500-hsl) / 0.18);
 
+  --background-mentioned: hsl(var(--brand-500-hsl) / 0.18);
   --background-mentioned-hover: hsl(var(--brand-500-hsl) / 0.15);
-  --background-modifier-hover: hsl(var(--primary-500-hsl) / 0.6);
   --mention-background: hsl(var(--brand-500-hsl) / 0.25);
 
-  --scrollbar-thin-thumb: var(--primary-500);
-  --scrollbar-auto-thumb: var(--primary-500);
-  --scrollbar-auto-track: var(--background-message-hover);
+  --search-popout-option-fade-hover: linear-gradient(
+    90deg,
+    hsl(var(--primary-530-hsl) / 0),
+    hsl(var(--primary-530-hsl) / 0.2) 50%
+  );
+
+  @if is_uniform() {
+    /* custom variables */
+    --c-background-secondary-alt2: var(--primary-430);
+    --c-reaction-border: var(--primary-660);
+
+    /* Override variables */
+    --background-primary: var(--primary-600);
+    --background-secondary: var(--primary-500);
+    --background-secondary-alt: var(--primary-460);
+    --background-tertiary: var(--primary-630);
+
+    --channels-default: var(--primary-330);
+    --channeltextarea-background: var(--background-secondary);
+
+    --scrollbar-thin-thumb: var(--primary-460);
+    --scrollbar-auto-thumb: var(--primary-460);
+
+    --button-secondary-background: var(--c-background-secondary-alt2);
+  } @else {
+    /* Override variables */
+    --background-modifier-selected: hsl(var(--primary-460-hsl) / 0.6);
+
+    --channel-text-area-placeholder: var(--primary-400);
+    --channeltextarea-background: var(--primary-500);
+
+    --scrollbar-thin-thumb: var(--primary-500);
+    --scrollbar-auto-thumb: var(--primary-500);
+  }
 }
 
 .theme-light {
-  --search-popout-option-fade-hover: linear-gradient(
-    90deg,
-    hsl(var(--primary-200-hsl) / 0),
-    var(--primary-200) 50%
-  );
+  /* Override variables */
+  --header-secondary: var(--primary-600);
+  --interactive-muted: var(--primary-360);
 
-  /* custom variables */
-  --c-separator-border: var(--primary-260);
-  --c-background-secondary-alt2: var(--primary-260);
-  --c-reaction-border: var(--primary-260);
-
-  /* override variables */
-  --background-tertiary: var(--primary-260);
-
-  --interactive-muted: var(--primary-400);
-  --background-message-hover: hsl(var(--primary-300-hsl) / 0.25);
+  --background-message-hover: hsl(var(--primary-260-hsl) / 0.3);
 
   --background-mentioned: hsl(var(--brand-500-hsl) / 0.5);
   --background-mentioned-hover: hsl(var(--brand-500-hsl) / 0.4);
@@ -180,5 +195,31 @@
   --scrollbar-auto-thumb: var(--primary-260);
   --scrollbar-auto-track: var(--background-message-hover);
 
-  --input-background: var(--primary-160);
+  --search-popout-option-fade-hover: linear-gradient(
+    90deg,
+    hsl(var(--primary-260-hsl) / 0),
+    var(--primary-260) 50%
+  );
+
+  @if is_uniform() {
+    /* custom variables */
+    --c-separator-border: var(--primary-260);
+    --c-background-secondary-alt2: var(--primary-160);
+    --c-reaction-border: var(--primary-260);
+
+    /* Override variables */
+    --background-primary: var(--nord-light1);
+    --background-secondary: var(--nord-light2);
+    --background-secondary-alt: var(--nord-light3);
+    --background-tertiary: var(--primary-300);
+
+    --input-background: var(--background-secondary);
+    --channeltextarea-background: var(--background-secondary-alt);
+  } @else {
+    /* Override variables */
+    --background-primary: var(--nord-light3);
+    --background-secondary: var(--nord-light2);
+    --background-secondary-alt: var(--primary-200);
+    --background-tertiary: var(--primary-260);
+  }
 }

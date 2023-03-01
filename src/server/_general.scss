@@ -16,7 +16,7 @@
  ? TODO: check utility
  */
 .ping-2J18Tq {
-  content: url(svg("server/ping.svg"));
+  content: url(svg("https://themes.ryand.ca/client/replugged-nordic/assets/server/ping.svg"));
 }
 
 .checklistIcon-S-7rG0 circle[fill="var(--white-100)"] {
@@ -45,6 +45,8 @@
 /*
  * Popup "Invite People"
  */
-.theme-dark .inviteBannerUpsell-1t_LYM {
-  background-color: var(--c-background-secondary-alt2);
+@if is_uniform() {
+  .theme-dark .inviteBannerUpsell-1t_LYM {
+    background-color: var(--c-background-secondary-alt2);
+  }
 }
