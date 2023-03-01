@@ -1,6 +1,6 @@
 {
   "name": "discord-nordic",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Replugged (rewrite) nordic theme",
   "engines": {
     "node": ">=14.0.0"
